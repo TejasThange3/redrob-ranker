@@ -7,26 +7,26 @@
 # ============================================================================
 # Team identity
 # ============================================================================
-team_name: "TODO_TEAM_NAME"  # Used in leaderboard and announcements
+team_name: "Talent Tensors"  # Used in leaderboard and announcements
 
 primary_contact:
-  name: "TODO_NAME"
-  email: "TODO_EMAIL"   # Used for all organizer communication
-  phone: "TODO_PHONE"        # Used for top-50 / top-10 outreach
+  name: "Tejas Thange"
+  email: "tejasankushthange@gmail.com"   # Used for all organizer communication
+  phone: "+91 - 9970593046"        # Used for top-50 / top-10 outreach
 
 team_members:
-  - name: "TODO_NAME"
-    email: "TODO_EMAIL"
-    role: "AI Engineer"          # Optional, e.g. "Team Lead", "Backend", "Data"
+  - name: "Tejas Thange"
+    email: "tejasankushthange@gmail.com"
+    role: "AI/ML Undergraduate Student"          # Optional, e.g. "Team Lead", "Backend", "Data"
 
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
-github_repo: "TODO_GITHUB_REPO_URL"
+github_repo: "https://github.com/TejasThange3/redrob-ranker"
 # Required. Must be reachable. Private repos OK if you can grant organizer
 # access at Stage 3 (the email to add will be communicated then).
 
-sandbox_link: "N/A - Run locally via Streamlit"
+sandbox_link: "https://redrob-ranker-123.streamlit.app/"
 # Required. A working hosted environment where the ranker can be run on a small
 # candidate sample. See Section 10.5 of submission_spec.md for acceptable
 # platforms (HuggingFace Spaces, Streamlit Cloud, Replit, Colab, Docker, Binder).
