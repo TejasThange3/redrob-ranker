@@ -55,7 +55,7 @@ st.markdown("""
         color: #E2E8F0 !important;
     }
     
-    /* Force Sidebar Background */
+    /* Force Sidebar Background (if any) */
     [data-testid="stSidebar"] {
         background-color: #0F172A !important;
         border-right: 1px solid #1E293B !important;
@@ -67,8 +67,68 @@ st.markdown("""
         font-weight: 600 !important;
         letter-spacing: -0.02em;
     }
+    .stMarkdown p {
+        color: #CBD5E1 !important;
+    }
     
-    /* Styled Buttons */
+    /* Tabs styling */
+    [data-testid="stTabs"] button {
+        color: #94A3B8 !important;
+        font-weight: 500 !important;
+    }
+    [data-testid="stTabs"] button[aria-selected="true"] {
+        color: #3B82F6 !important;
+    }
+    
+    /* Metrics styling */
+    [data-testid="stMetricLabel"] p {
+        color: #94A3B8 !important;
+        font-size: 1rem !important;
+    }
+    [data-testid="stMetricValue"] {
+        color: #F8FAFC !important;
+    }
+    
+    /* Info boxes (st.info) */
+    [data-testid="stAlert"] {
+        background-color: rgba(59, 130, 246, 0.15) !important;
+        border: 1px solid rgba(59, 130, 246, 0.3) !important;
+        color: #F8FAFC !important;
+    }
+    [data-testid="stAlert"] * {
+        color: #F8FAFC !important;
+    }
+    
+    /* File Uploader Container & text */
+    [data-testid="stFileUploadDropzone"] {
+        background-color: #1E293B !important;
+        border: 2px dashed #334155 !important;
+        border-radius: 12px !important;
+        padding: 2rem !important;
+        transition: all 0.3s ease;
+    }
+    [data-testid="stFileUploadDropzone"]:hover {
+        border-color: #3B82F6 !important;
+        background-color: #0F172A !important;
+    }
+    .stFileUploader label {
+        color: #F8FAFC !important;
+        font-weight: 600 !important;
+    }
+    [data-testid="stFileUploadDropzone"] div {
+        color: #E2E8F0 !important;
+    }
+    [data-testid="stFileUploadDropzone"] small {
+        color: #94A3B8 !important;
+    }
+    /* Fix opacity on the upload button inside the dropzone */
+    [data-testid="stFileUploadDropzone"] button {
+        opacity: 1 !important;
+        background-color: #334155 !important;
+        color: #ffffff !important;
+    }
+    
+    /* Styled Action Buttons */
     .stButton>button {
         background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%) !important;
         color: #ffffff !important;
@@ -85,20 +145,7 @@ st.markdown("""
         background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%) !important;
     }
     
-    /* File Uploader Container */
-    [data-testid="stFileUploadDropzone"] {
-        background-color: #1E293B !important;
-        border: 2px dashed #334155 !important;
-        border-radius: 12px !important;
-        padding: 2rem !important;
-        transition: all 0.3s ease;
-    }
-    [data-testid="stFileUploadDropzone"]:hover {
-        border-color: #3B82F6 !important;
-        background-color: #0F172A !important;
-    }
-    
-    /* Hide Streamlit Branding & top header padding */
+    /* Hide Streamlit Branding */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     [data-testid="stHeader"] {background: transparent !important;}
