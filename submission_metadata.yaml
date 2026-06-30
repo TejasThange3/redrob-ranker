@@ -39,7 +39,7 @@ reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submi
 # Compute environment
 # ============================================================================
 compute:
-  platform: "Local Windows Box"                 # Or: "AWS EC2 c5.4xlarge", "Local Linux box", etc.
+  platform: "Asus ROG Strix"                 # Or: "AWS EC2 c5.4xlarge", "Local Linux box", etc.
   cpu_cores: 8                                  # Number of CPU cores used
   ram_gb: 16                                    # Available RAM in GB
   python_version: "3.12.0"                      # python --version
